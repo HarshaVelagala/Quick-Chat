@@ -1,0 +1,106 @@
+.chat-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 800px) {
+  .video-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.video video {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: #000;
+}
+
+.call-controls {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.my-id {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.my-id button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.call-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.call-actions input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.start-call-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.end-call-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.incoming-call {
+  background: #e3f2fd;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.answer-call-btn {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+}
